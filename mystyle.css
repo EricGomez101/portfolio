@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+  background-color: rgb(54, 114, 125);
+  font-family: 'Josefin Sans', sans-serif;
+}
+.logo{
+  position: absolute;
+  top: .5em;
+  left: 1em;
+  color: rgb(84, 98, 104);
+}
+#container{
+  background-color: rgb(139, 179, 187);
+  margin: 5em 3em;
+  border-radius: 5px;
+}
+#bio{
+  height: 800px;
+  text-align: center;
+  position: relative;
+}
+#bio div{
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  top: 45%;
+
+}
