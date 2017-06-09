@@ -10,6 +10,9 @@ body{
   text-align: center;
   margin: 0 auto;
 }
+img{
+  border-radius: 20px;
+}
 hr{
   border: 0;
   height: 1px;
@@ -85,13 +88,13 @@ input[type="submit"]:hover{
   border-radius: 5px;
 }
 .section{
-  height: 800px;
+  height: 100vh;
   position: relative;
 }
 .bioContainer{
   width: 100%;
   position: absolute;
-  top: 40%;
+  top: 20%;
 }
 .bioContainer div{
   max-width: 600px;
