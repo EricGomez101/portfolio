@@ -1,0 +1,125 @@
+/* variables */
+:root{
+  --bgblue: rgb(17, 31, 53);
+  --blue: rgb(60, 81, 112);
+  --orange: rgb(241, 131, 11);
+  --white: rgb(235, 235, 235);
+  --grey: rgb(157, 157, 157);
+}
+*{
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+  font-family: 'Josefin Slab', serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0.50turn, #e66465, #9198e5);
+}
+.container{
+  max-width: 1000px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-content{
+  width: 90%;
+  height: 60%;
+  margin: 1em;
+  border-radius: 15px;
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: var(--bgblue)
+}
+header{
+  width: 100%;
+  margin-bottom: 2em;
+}
+header nav{
+  display:flex;
+  flex-flow: row;
+  justify-content: flex-end;
+}
+header nav li{
+  margin: 1em 1em 1em 0;
+  padding: 0.25em;
+  border: 2px solid #e66465;
+  border-radius: 3px;
+  list-style-type: none;
+  font-size: 18px;
+}
+header nav li:hover{
+  background-color: var(--orange)
+}
+header nav li a{
+  text-decoration: none;
+}
+.icon{
+  margin-right: 5px;
+  font-size: 1em;
+}
+.profile-picture{
+  width: 20%;
+  min-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+.main-content h1{
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  color: white;
+}
+.break-point{
+  display: none;
+}
+.main-content p{
+  font-size: 22px;
+  color: var(--grey);
+}
+@media(max-width: 600px){
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-content{
+    width: 100%;
+    border-radius: 0;
+    height: 100%;
+    margin: 3em 0;
+    display:flex;
+    flex-direction: column;
+  }
+  header{
+    margin-top: 1em;
+  }
+  .main-content header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  header nav li{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #e66465;
+    margin: 0;
+    text-align: center;
+  }
+  header nav li:first-child{
+    border-top: 2px solid #e66465;
+  }
+  .break-point{
+    display: inline;
+  }
+  .main-content p{
+    max-width: 80%;
+  }
+}
