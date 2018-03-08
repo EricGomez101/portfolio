@@ -57,7 +57,7 @@ header nav li{
   font-size: 18px;
 }
 header nav li:hover{
-  background-color: var(--orange)
+  background-color: var(--blue)
 }
 header nav li a{
   text-decoration: none;
