@@ -94,7 +94,7 @@ header nav li a{
     width: 100%;
     border-radius: 0;
     height: 100%;
-    margin: 3em 0 1em;
+    margin: 2em 0 1em;
     display:flex;
     flex-direction: column;
   }
